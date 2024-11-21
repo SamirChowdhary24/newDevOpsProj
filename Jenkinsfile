@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ALERT_EMAIL = "ayaan171104@gmail.com"      
+        ALERT_EMAIL = "samirkabbir@gmail.com"      
         PROCESS_NAME = "apache2"              
         RESTART_COMMAND = "sudo systemctl restart apache2" 
         DISK_THRESHOLD = 80                   
