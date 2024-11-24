@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers{
+        cron('H * * * *')
+    }
+    
     environment {
         ALERT_EMAIL = "samirkabbir@gmail.com"      
         PROCESS_NAME = "apache2"              
