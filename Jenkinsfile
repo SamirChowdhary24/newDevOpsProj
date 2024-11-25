@@ -3,14 +3,14 @@ pipeline {
     
     triggers {
         cron('H * * * *')
-    }
+    } //Runs the pipeline on a schedule using the cron syntax (H * * * *), which means it executes once every hour at a random minute.
     
     stages {
         stage('Git Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/SamirChowdhary24/newDevOpsProj'
             }
-        }
+        } //Clones the repository and checks out the main branch.
         
         
         stage('Check Disk Usage') {
@@ -22,7 +22,7 @@ pipeline {
                     '''
                 }
             }
-        }
+        } //runs script1.sh to monitor disk usage after ensuring it is executable.
         
         stage('Process Management') {
             steps {
@@ -34,7 +34,7 @@ pipeline {
                 }
             }
         }
-    }
+    } //executes script1_2.sh to handle process-related tasks, like checking and managing system processes.
     
     post {
         failure {
@@ -49,4 +49,4 @@ pipeline {
             )
         }
     }
-}
+} //On Failure: Sends an email notification to samirkabbr@gmail.com with details about the job failure, including the console output link.
