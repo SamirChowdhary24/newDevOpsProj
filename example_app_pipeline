@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     options {
-        timeout(time: 10, unit: 'MINUTES')
+        timeout(time: 10, unit: 'MINUTES') # If the pipeline runs longer than 10 minutes, it will stop.
     }
 
     tools {
@@ -12,7 +12,7 @@ pipeline {
 
     triggers {
         // pollSCM('H/5 * * * *') // Disable Polling for now.
-        githubPush()
+        githubPush() #Automatically triggers the pipeline on a GitHub push event.
     }
 
     parameters {
@@ -24,7 +24,8 @@ pipeline {
             steps {
                 git branch: "main", url: 'https://github.com/Syndrizzle/devops-stuff.git'
             }
-        }
+        }#Clones the specified Git repository and checks out the main branch.
+
 
         stage('Build') {
             steps {
@@ -37,7 +38,7 @@ pipeline {
                 }
                 archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
             }
-        }
+        }# Moves into the project folder example-app-pipeline and uses Maven to compile the code and package it into a .jar file
 
         
         stage('Test') {
@@ -52,7 +53,7 @@ pipeline {
                     junit 'example-app-pipeline/target/surefire-reports/*.xml'
                 }
             }
-        }
+        } #Runs tests using Maven
         
         stage('Deliver') { 
             steps {
@@ -62,9 +63,11 @@ pipeline {
                 '''
             }
         }
-    }
-    
-    post {
+    } #uns a custom shell script (deliver.sh) located in the jenkins/scripts folder of the project to deliver/deploy the application.
+
+
+//Post Pipeline Actions
+    post { 
         success {
             echo "Pipeline succeeded!"
         }
