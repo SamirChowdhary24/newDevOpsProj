@@ -1,4 +1,5 @@
 # TASK 1 : INSTALL JENKINS
+https://github.com/SamirChowdhary24/newDevOpsProj/blob/main/jenkins_installation_TASK1.sh
 
 ![image](https://github.com/user-attachments/assets/53c1cb8d-9066-46c9-93b8-04c4a8320304)
 This Bash script automates the installation of Java 17 and Jenkins, adapting to the operating system (Debian-based Linux or macOS). It includes three key functions:
@@ -45,7 +46,7 @@ Global reader has been given to all the roles and global admin has been give to 
 # ------------------------------------------------------------------------------
 
 # TASK 4 : PIPELINE FOR DISK USAGE AUR PROCESS MANAGEMENT#
-
+https://github.com/SamirChowdhary24/newDevOpsProj/blob/main/script1.sh
 ![image](https://github.com/user-attachments/assets/0c8311bf-1201-4213-8cc3-38e541d71803)
 
 This script monitors the disk usage of the root directory (/). If the usage exceeds 80%, it issues a warning and exits with an error code; otherwise, it confirms normal usage.
