@@ -1,6 +1,16 @@
 # TASK 1 : INSTALL JENKINS
 
-This script contains two functions, install_java and install_jenkins, which help install Java 17 and Jenkins on different operating systems. function 1 - install_java: This function checks your operating system (Debian/Ubuntu, RHEL/Fedora/Centos, or macOS) and installs Java 17 using the correct package manager (like apt, yum, or brew). funtion 2 - install_jenkins: This function installs the latest LTS version of Jenkins. It adds the Jenkins repository and key for Debian-based systems, or uses yum for RHEL-based systems, and installs it. For macOS, it uses brew to install Jenkins.
+![image](https://github.com/user-attachments/assets/53c1cb8d-9066-46c9-93b8-04c4a8320304)
+This Bash script automates the installation of Java 17 and Jenkins, adapting to the operating system (Debian-based Linux or macOS). It includes three key functions:
+
+- **os()**: Detects the operating system. If the script runs on Linux with the `apt` package manager, the `os` variable is set to "debian." For macOS, it's set to "mac." Unsupported systems prompt an error message, and the script exits.
+
+- **java()**: Installs Java 17. On Debian, it updates repositories and installs `openjdk-17-jdk` using `apt`. On macOS, it uses Homebrew to install `openjdk@17`, providing progress messages throughout.
+
+- **jenkins()**: Handles Jenkins installation. For Debian, it adds Jenkins' official repository, updates packages, and installs Jenkins via `apt`. On macOS, it installs Jenkins LTS using Homebrew, with status updates displayed.
+
+The script executes these functions sequentially, ensuring OS detection and seamless installation of the required tools.
+
 
 # ------------------------------------------------------------------------------
 
