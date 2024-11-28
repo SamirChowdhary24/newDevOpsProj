@@ -5,7 +5,7 @@ This Bash script automates the installation of Java 17 and Jenkins, adapting to 
 
 - **os()**: Detects the operating system. If the script runs on Linux with the `apt` package manager, the `os` variable is set to "debian." For macOS, it's set to "mac." Unsupported systems prompt an error message, and the script exits.
 
-- **java()**: Installs Java 17. On Debian, it updates repositories and installs `openjdk-17-jdk` using `apt`. On macOS, it uses Homebrew to install `openjdk@17`, providing progress messages throughout.
+- **java()**: Installs Java 17. On Debian, it updates repositories and installs openjdk-17-jdk using apt . On macOS, it uses Homebrew to install openjdk@17, providing progress messages throughout.
 
 - **jenkins()**: Handles Jenkins installation. For Debian, it adds Jenkins' official repository, updates packages, and installs Jenkins via `apt`. On macOS, it installs Jenkins LTS using Homebrew, with status updates displayed.
 
