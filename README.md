@@ -64,6 +64,7 @@ This Jenkins pipeline automates tasks, including cloning a Git repository, monit
 # ------------------------------------------------------------------------------
 
 # Task 5 : BACKUP PROCESS
+https://github.com/SamirChowdhary24/newDevOpsProj/blob/main/script2.sh
 
 ![image](https://github.com/user-attachments/assets/1bae47c9-9a04-4e62-a46f-ca54ed2ae690)
 
