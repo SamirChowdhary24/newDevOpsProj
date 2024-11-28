@@ -3,18 +3,18 @@
 ![image](https://github.com/user-attachments/assets/53c1cb8d-9066-46c9-93b8-04c4a8320304)
 This Bash script automates the installation of Java 17 and Jenkins, adapting to the operating system (Debian-based Linux or macOS). It includes three key functions:
 
-- **os()**: Detects the operating system. If the script runs on Linux with the apt package manager, the os variable is set to "debian." For macOS, it's set to "mac." Unsupported systems prompt an error message, and the script exits.
+**os()**: Detects the operating system. If the script runs on Linux with the apt package manager, the os variable is set to "debian." For macOS, it's set to "mac." Unsupported systems prompt an error message, and the script exits.
 
-- **java()**: Installs Java 17. On Debian, it updates repositories and installs openjdk-17-jdk using apt . On macOS, it uses Homebrew to install openjdk@17, providing progress messages throughout.
+**java()**: Installs Java 17. On Debian, it updates repositories and installs openjdk-17-jdk using apt . On macOS, it uses Homebrew to install openjdk@17, providing progress messages throughout.
 
-- **jenkins()**: Handles Jenkins installation. For Debian, it adds Jenkins official repository, updates packages, and installs Jenkins via apt. On macOS, it installs Jenkins LTS using Homebrew, with status updates displayed.
+**jenkins()**: Handles Jenkins installation. For Debian, it adds Jenkins official repository, updates packages, and installs Jenkins via apt. On macOS, it installs Jenkins LTS using Homebrew, with status updates displayed.
 
 The script executes these functions sequentially, ensuring OS detection and seamless installation of the required tools.
 
 
 # ------------------------------------------------------------------------------
 
-#TASK 2 : MASTER SLAVE ARCHITECTURE
+# TASK 2 : MASTER SLAVE ARCHITECTURE
 
 ![image](https://github.com/user-attachments/assets/a6791028-a76d-4e04-b9bd-fa36c6641dab)
 create a node to setup master slave architecure using private key of the slave and host information, this architecture can run 5 different tasks as per the needs of the user.
