@@ -69,7 +69,9 @@ Script passes command-line arguments to set a source "-s" and a destination "-d"
 ![image](https://github.com/user-attachments/assets/3118361f-ef57-426d-86d5-6f6dafc9fcda)
 
 This part of the script checks if the source and the destination passed previously, exists or not. If it exists, the cript will continue naturally and if it does not exist, a new directory will be made. If it further fails while creating a directory it will show an error message and exit while upodating the log.
+
 ![image](https://github.com/user-attachments/assets/fb0170f2-2166-4aee-98a5-1fa6cf3616f0)
+
 The cript will perform a backup of the source dir at the destination dir, It generates a timestamp backup name. If the compress option is used, the dir is backed up in a .tar.gz file using tar . If not used, it copies the source dir to the new dir. Logs are updated 
 at each step whether success or failure. There is also a cleanup fucntion that will remove any bacup files after 7 days .
 
@@ -79,10 +81,14 @@ at each step whether success or failure. There is also a cleanup fucntion that w
 
 ![image](https://github.com/user-attachments/assets/61e21a63-88ae-45f7-b626-b811c2dc833f)
 ![image](https://github.com/user-attachments/assets/6286c80a-70c0-4722-a1f8-237010490185)
+
 Certain tools have been implemented to build the java app , Such as jdk 17 and Maven 3.9.9 .
+
 ![image](https://github.com/user-attachments/assets/539093d8-945b-42d7-b586-6e8ceed20cac)
 ![image](https://github.com/user-attachments/assets/8fe972db-3868-4587-9957-eb2cef48193c)
+
 This Jenkins pipeline is designed to build, test, and deliver a project using Maven and Java. It is triggered by githubPush() and supports parameters. The pipeline checks out code from the repository https://github.com/Syndrizzle/devops-stuff.git , defaulting to the main branch. The command mvn clean package -DskipTests compiles the code and packages it into a .jar file. Upon successful build, the deliver.sh script is executed to deploy the application.
+
 ![image](https://github.com/user-attachments/assets/5565df74-d901-40f7-925b-27d0fd735856)
 
 
