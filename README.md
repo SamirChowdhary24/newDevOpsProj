@@ -1,4 +1,4 @@
-TASK 2 : ROLL BASED AUTHENTICATION
+#TASK 2 : ROLL BASED AUTHENTICATION
 
 ![image](https://github.com/user-attachments/assets/03cc8ece-aa53-4d19-a733-ff4583d6ed15)
 3 users were added with the names as : devops , developer , testing
@@ -10,7 +10,11 @@ The developer / devops / test roles have been created and they are given their r
 Global reader has been given to all the roles and global admin has been give to the admin user as seen in the screenshot above.
 ![image](https://github.com/user-attachments/assets/ff8f4e62-51f5-45fc-8ace-0d14f5a1b517)
 ---------------------------------------------------------------------------------------------------------------------
-TASK 3 : PIPELINE FOR DISK USAGE AUR PROCESS MANAGEMENT
+#TASK 3 : PIPELINE FOR DISK USAGE AUR PROCESS MANAGEMENT
+![image](https://github.com/user-attachments/assets/0c8311bf-1201-4213-8cc3-38e541d71803)
+This script monitors the disk usage of the root directory (/). If the usage exceeds 80%, it issues a warning and exits with an error code; otherwise, it confirms normal usage.
+
+
 
 
 
