@@ -51,10 +51,12 @@ https://github.com/SamirChowdhary24/newDevOpsProj/blob/main/script1.sh
 
 This script monitors the disk usage of the root directory (/). If the usage exceeds 80%, it issues a warning and exits with an error code; otherwise, it confirms normal usage.
 
+https://github.com/SamirChowdhary24/newDevOpsProj/blob/main/script1_2.sh
 ![image](https://github.com/user-attachments/assets/39d36dfa-b745-4e27-b998-9b597c425307)
 
 This script identifies system resource usage trends by listing the top 5 processes consuming the most CPU and memory. It also detects and displays any zombie processes to aid in system troubleshooting.
 
+https://github.com/SamirChowdhary24/newDevOpsProj/blob/main/Jenkinsfile
 ![image](https://github.com/user-attachments/assets/ab7b2f53-a32e-409e-9ebe-262aaa22e00a)
 
 This Jenkins pipeline automates tasks, including cloning a Git repository, monitoring disk usage, and managing processes by running custom scripts on an hourly schedule. On failure, it sends an email notification 
