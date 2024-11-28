@@ -2,7 +2,7 @@
 
 This script contains two functions, install_java and install_jenkins, which help install Java 17 and Jenkins on different operating systems. function 1 - install_java: This function checks your operating system (Debian/Ubuntu, RHEL/Fedora/Centos, or macOS) and installs Java 17 using the correct package manager (like apt, yum, or brew). funtion 2 - install_jenkins: This function installs the latest LTS version of Jenkins. It adds the Jenkins repository and key for Debian-based systems, or uses yum for RHEL-based systems, and installs it. For macOS, it uses brew to install Jenkins.
 
-# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 #TASK 2 : MASTER SLAVE ARCHITECTURE
 
@@ -11,7 +11,7 @@ create a node to setup master slave architecure using private key of the slave a
 ![image](https://github.com/user-attachments/assets/660a7461-6235-4a2d-89f9-06d79f036b52)
 
 
-# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # TASK 3 : ROLL BASED AUTHENTICATION
 
@@ -24,7 +24,7 @@ The developer / devops / test roles have been created and they are given their r
 ![image](https://github.com/user-attachments/assets/7807d101-9b39-4016-9448-22b419f6deec)
 Global reader has been given to all the roles and global admin has been give to the admin user as seen in the screenshot above.
 ![image](https://github.com/user-attachments/assets/ff8f4e62-51f5-45fc-8ace-0d14f5a1b517)
-# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # TASK 4 : PIPELINE FOR DISK USAGE AUR PROCESS MANAGEMENT#
 
@@ -36,7 +36,7 @@ This script identifies system resource usage trends by listing the top 5 process
 ![image](https://github.com/user-attachments/assets/ab7b2f53-a32e-409e-9ebe-262aaa22e00a)
 This Jenkins pipeline automates tasks, including cloning a Git repository, monitoring disk usage, and managing processes by running custom scripts on an hourly schedule. On failure, it sends an email notification 
 
-# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Task 5 : BACKUP PROCESS
 
@@ -48,9 +48,20 @@ This part of the script checks if the source and the destination passed previous
 The cript will perform a backup of the source dir at the destination dir, It generates a timestamp backup name. If the compress option is used, the dir is backed up in a .tar.gz file using tar . If not used, it copies the source dir to the new dir. Logs are updated 
 at each step whether success or failure. There is also a cleanup fucntion that will remove any bacup files after 7 days .
 
-# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # TASK 6 : BUILDING A JAVA APP
+
+![image](https://github.com/user-attachments/assets/61e21a63-88ae-45f7-b626-b811c2dc833f)
+![image](https://github.com/user-attachments/assets/6286c80a-70c0-4722-a1f8-237010490185)
+Certain tools have been implemented to build the java app , Such as jdk 17 and Maven 3.9.9 .
+![image](https://github.com/user-attachments/assets/539093d8-945b-42d7-b586-6e8ceed20cac)
+![image](https://github.com/user-attachments/assets/8fe972db-3868-4587-9957-eb2cef48193c)
+This Jenkins pipeline is designed to build, test, and deliver a project using Maven and Java. It is triggered by `githubPush()` and supports parameters. The pipeline checks out code from the repository `https://github.com/Syndrizzle/devops-stuff.git`, defaulting to the main branch. The command `mvn clean package -DskipTests` compiles the code and packages it into a `.jar` file. Upon successful build, the `deliver.sh` script is executed to deploy the application.
+![image](https://github.com/user-attachments/assets/5565df74-d901-40f7-925b-27d0fd735856)
+
+
+
 
 
 
