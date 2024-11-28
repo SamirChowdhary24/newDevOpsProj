@@ -14,6 +14,15 @@ Global reader has been given to all the roles and global admin has been give to 
 ![image](https://github.com/user-attachments/assets/0c8311bf-1201-4213-8cc3-38e541d71803)
 This script monitors the disk usage of the root directory (/). If the usage exceeds 80%, it issues a warning and exits with an error code; otherwise, it confirms normal usage.
 
+![image](https://github.com/user-attachments/assets/39d36dfa-b745-4e27-b998-9b597c425307)
+This script identifies system resource usage trends by listing the top 5 processes consuming the most CPU and memory. It also detects and displays any zombie processes to aid in system troubleshooting.
+![image](https://github.com/user-attachments/assets/ab7b2f53-a32e-409e-9ebe-262aaa22e00a)
+This Jenkins pipeline automates tasks, including cloning a Git repository, monitoring disk usage, and managing processes by running custom scripts on an hourly schedule. On failure, it sends an email notification 
+# ------------------------------------------------------------------------------------------
+# Task 4 : BACKUP PROCESS
+
+
+
 
 
 
